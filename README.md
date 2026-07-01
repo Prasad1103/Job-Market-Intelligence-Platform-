@@ -189,22 +189,6 @@ Interactive dashboard for exploring job market trends using dynamic filters.
 - Hiring company comparison
 - Location-wise job availability
 -------------------------------------------------------------------------------------------------
-# 📊 Data Model
-
-The dashboard follows a Star Schema consisting of one Fact table and multiple Dimension tables connected through one-to-many relationships for efficient reporting and analysis.
-
-                  Dim Company
-                       |
-                       |
-Dim Location ---- Fact Jobs ---- Dim Schedule
-                       |
-                       |
-              Bridge Job Skills
-                       |
-                 Dim Skills
-                       |
-                Dim Search Term
--------------------------------------------------------------------------------------------------
 ## 🔄 ETL Workflow
 
 Raw Dataset
